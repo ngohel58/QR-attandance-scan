@@ -9,11 +9,10 @@ REQUIRED_PATHS = [
     'app/build.gradle',
     'app/src/main/AndroidManifest.xml',
     'app/src/main/java',
-    'app/src/main/python',
     'app/src/main/res/layout/activity_main.xml',
 ]
 
-def main(project_dir='DepthEstimationApp'):
+def main(project_dir='ChromoDepthApp'):
     base = Path(project_dir)
     missing = []
     for rel in REQUIRED_PATHS:
