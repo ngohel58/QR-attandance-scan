@@ -1,0 +1,62 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/pickBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/originalView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/generateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Depth" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/depthView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/applyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply Effect" />
+
+        <SeekBar
+            android:id="@+id/thresholdSeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100" />
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/effectView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Images" />
+
+    </LinearLayout>
+</ScrollView>

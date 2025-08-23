@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.chromodepth'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.example.chromodepth'
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName '1.0'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+    implementation 'com.microsoft.onnxruntime:onnxruntime-android:1.22.0'
+}
